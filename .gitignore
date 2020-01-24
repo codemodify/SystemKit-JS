@@ -1,0 +1,8 @@
+
+node_modules
+
+**/*.js
+
+SystemKit-JS.d.ts
+SystemKit-JS.js
+SystemKit-JS.js.map

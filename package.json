@@ -1,0 +1,19 @@
+{
+	"name": "systemkit-js",
+	"version": "1.0.0",
+	"author": "Nicolae Carabut",
+	"license": "https://github.com/codemodify/TheFreeLicense",
+	"devDependencies": {
+		"typescript": "*"
+	},
+	"scripts": {
+		"compile": "./node_modules/.bin/tsc",
+		"p_rename": "mv SystemKit-JS.js SystemKit-JS.js_",
+		"p_remove_temp": "rm SystemKit-JS.js_",
+		"p_embedd_asq": "cat third-party/asq.js > SystemKit-JS.js",
+		"p_embedd_axios": "cat third-party/axios.min.js >> SystemKit-JS.js",
+		"p_embedd_sprintf": "cat third-party/sprintf.min.js >> SystemKit-JS.js",
+		"p_embedd_systemkit": "cat SystemKit-JS.js_ >> SystemKit-JS.js",
+		"build": "npm run compile && npm run p_rename && npm run p_embedd_asq && npm run p_embedd_axios && npm run p_embedd_sprintf && npm run p_embedd_systemkit && npm run p_remove_temp"
+	}
+}
