@@ -1,15 +1,15 @@
 {
-    "compilerOptions": {
-        "module": "System",
-        "removeComments": true,
-        "outFile": "SystemKit-JS.js",
-        "sourceMap": true,
-        "declaration": true
-    },
-    "include": [
-        "*/*.ts"
-    ],
-    "exclude": [
-        "*.d.ts"
-    ]
+	"compilerOptions": {
+		"module": "System",
+		"removeComments": true,
+		"outFile": "SystemKit-JS.js",
+		"sourceMap": true,
+		"declaration": true
+	},
+	"include": [
+		"*/*.ts"
+	],
+	"exclude": [
+		"*.d.ts"
+	]
 }
