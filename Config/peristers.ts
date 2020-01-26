@@ -1,11 +1,10 @@
-import { SystemKit as sk1 } from "../Helpers/objects"
-import { SystemKit as sk2 } from "./contracts"
+// import { SystemKit as sk1 } from "../Helpers/objects"
+// import { SystemKit as sk2 } from "./contracts"
 
-// aliasing
-import helpersObjects = sk1.Helpers;
-import configContracts = sk2.Config;
-
-export namespace SystemKit.Config {
+namespace SystemKit.Config {
+	// aliasing
+	import helpersObjects = SystemKit.Helpers;
+	import configContracts = SystemKit.Config;
 
 	export class LocalStoragePersister implements configContracts.IPersister {
 		private _key: string = "";

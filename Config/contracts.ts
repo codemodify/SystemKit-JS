@@ -1,4 +1,4 @@
-export namespace SystemKit.Config {
+namespace SystemKit.Config {
 	export interface IPersister {
 		Save(data: any, done);
 		Read(dataContainer: any, done);

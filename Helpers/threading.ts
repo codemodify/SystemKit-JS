@@ -1,13 +1,12 @@
-import { SystemKit as sk1 } from "./objects"
-import { SystemKit as sk2 } from "./strings"
-import { SystemKit as sk3 } from "./events"
+// import { SystemKit as sk1 } from "./objects"
+// import { SystemKit as sk2 } from "./strings"
+// import { SystemKit as sk3 } from "./events"
 
-// aliasing
-import helpersObjects = sk1.Helpers;
-import helpersStrings = sk2.Helpers;
-import helpersEvents = sk3.Helpers;
-
-export namespace SystemKit.Helpers {
+namespace SystemKit.Helpers {
+	// aliasing
+	import helpersObjects = SystemKit.Helpers;
+	import helpersStrings = SystemKit.Helpers;
+	import helpersEvents = SystemKit.Helpers;
 
 	export interface IThread {
 		Start();

@@ -1,4 +1,4 @@
-export namespace SystemKit.Helpers {
+namespace SystemKit.Helpers {
 
 	export function IsNullOrEmpty(object: any): boolean {
 		// Quick Check

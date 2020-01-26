@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"module": "System",
+		"module": "none",
 		"removeComments": true,
 		"outFile": "SystemKit-JS.js",
 		"sourceMap": true,

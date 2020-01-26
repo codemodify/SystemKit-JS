@@ -1,15 +1,18 @@
-import { SystemKit as sk1 } from "../../Helpers/objects"
-import { SystemKit as sk2 } from "../../Helpers/strings"
-import { SystemKit as sk3 } from "../Contracts/contracts"
-import { SystemKit as sk4 } from "../local-house-keeping/house-keeping"
+// import { SystemKit as sk1 } from "../../Helpers/objects"
+// import { SystemKit as sk2 } from "../../Helpers/strings"
+// import { SystemKit as sk3 } from "../Contracts/contracts"
+// import { SystemKit as sk4 } from "../local-house-keeping/house-keeping"
 
-// aliasing
-import helpersObjects = sk1.Helpers;
-import helpersStrings = sk2.Helpers;
-import loggingC = sk3.Logging.Contracts;
-import housekeeping = sk4.Logging.housekeeping;
+/// <reference path="../../Helpers/objects.ts" />
+/// <reference path="../local-house-keeping/house-keeping.ts" />
 
 export module SystemKit.Logging.Formatters {
+	// aliasing
+	import helpersObjects = SystemKit.Helpers;
+	import helpersStrings = SystemKit.Helpers;
+	import loggingC = SystemKit.Logging.Contracts;
+	import housekeeping = SystemKit.Logging.housekeeping;
+
 	declare var sprintf;
 
 	export function NewSimpleFormatterLogger(logger: loggingC.Logger): loggingC.EasyLogger {

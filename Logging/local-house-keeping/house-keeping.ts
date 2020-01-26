@@ -1,14 +1,13 @@
 
-import { SystemKit as sk1 } from "../../Helpers/objects"
-import { SystemKit as sk2 } from "../../Helpers/strings"
-import { SystemKit as sk3 } from "../Contracts/contracts"
+// import { SystemKit as sk1 } from "../../Helpers/objects"
+// import { SystemKit as sk2 } from "../../Helpers/strings"
+// import { SystemKit as sk3 } from "../Contracts/contracts"
 
-// aliasing
-import helpersObjects = sk1.Helpers;
-import helpersStrings = sk2.Helpers;
-import loggingC = sk3.Logging.Contracts;
-
-export namespace SystemKit.Logging.housekeeping {
+namespace SystemKit.Logging.housekeeping {
+	// aliasing
+	import helpersObjects = SystemKit.Helpers;
+	import helpersStrings = SystemKit.Helpers;
+	import loggingC = SystemKit.Logging.Contracts;
 
 	export class defaultHelperImplmentation implements loggingC.EasyLogger {
 		public loggerToSendTo: loggingC.Logger;

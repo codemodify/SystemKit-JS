@@ -1,4 +1,4 @@
-export namespace SystemKit.Logging.Contracts {
+namespace SystemKit.Logging.Contracts {
 
 	export enum LogType {
 		TypeDisable = 0,  // 0
@@ -41,30 +41,30 @@ export namespace SystemKit.Logging.Contracts {
 	}
 
 	export interface EasyLogger extends Logger {
-		KeepOnlyLogs(logTypes: LogType[])
+		KeepOnlyLogs(logTypes: LogType[]);
 
-		LogPanicWithTagAndLevel(tag: string, level: number, message: string)
-		LogFatalWithTagAndLevel(tag: string, level: number, message: string)
-		LogErrorWithTagAndLevel(tag: string, level: number, message: string)
-		LogWarningWithTagAndLevel(tag: string, level: number, message: string)
-		LogInfoWithTagAndLevel(tag: string, level: number, message: string)
-		LogDebugWithTagAndLevel(tag: string, level: number, message: string)
-		LogTraceWithTagAndLevel(tag: string, level: number, message: string)
+		LogPanicWithTagAndLevel(tag: string, level: number, message: string);
+		LogFatalWithTagAndLevel(tag: string, level: number, message: string);
+		LogErrorWithTagAndLevel(tag: string, level: number, message: string);
+		LogWarningWithTagAndLevel(tag: string, level: number, message: string);
+		LogInfoWithTagAndLevel(tag: string, level: number, message: string);
+		LogDebugWithTagAndLevel(tag: string, level: number, message: string);
+		LogTraceWithTagAndLevel(tag: string, level: number, message: string);
 
-		LogPanic(message: string)
-		LogFatal(message: string)
-		LogError(message: string)
-		LogWarning(message: string)
-		LogInfo(message: string)
-		LogDebug(message: string)
-		LogTrace(message: string)
+		LogPanic(message: string);
+		LogFatal(message: string);
+		LogError(message: string);
+		LogWarning(message: string);
+		LogInfo(message: string);
+		LogDebug(message: string);
+		LogTrace(message: string);
 
-		LogPanicWithFields(fields: Fields)
-		LogFatalWithFields(fields: Fields)
-		LogErrorWithFields(fields: Fields)
-		LogWarningWithFields(fields: Fields)
-		LogInfoWithFields(fields: Fields)
-		LogDebugWithFields(fields: Fields)
-		LogTraceWithFields(fields: Fields)
+		LogPanicWithFields(fields: Fields);
+		LogFatalWithFields(fields: Fields);
+		LogErrorWithFields(fields: Fields);
+		LogWarningWithFields(fields: Fields);
+		LogInfoWithFields(fields: Fields);
+		LogDebugWithFields(fields: Fields);
+		LogTraceWithFields(fields: Fields);
 	}
 }

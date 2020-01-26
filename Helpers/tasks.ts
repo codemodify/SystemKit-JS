@@ -1,4 +1,4 @@
-export namespace SystemKit.Helpers {
+namespace SystemKit.Helpers {
 
 	declare var ASQ;
 

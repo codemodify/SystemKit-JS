@@ -1,4 +1,4 @@
-export namespace SystemKit.Helpers {
+namespace SystemKit.Helpers {
 
 	export interface Delegate<T> {
 		(data?: T): void;

@@ -1,10 +1,9 @@
 
-import { SystemKit as sk1 } from "./objects";
+// import { SystemKit as sk1 } from "./objects";
 
-// aliasing
-import helpersObjects = sk1.Helpers;
-
-export namespace SystemKit.Helpers {
+namespace SystemKit.Helpers {
+	// aliasing
+	import helpersObjects = SystemKit.Helpers;
 
 	export function Replace(originalString: string, stringToFind: string, replacingString: string, count: number): string {
 		var resultString = originalString;
